@@ -1,0 +1,83 @@
+<template>
+  <div class="container" style="height: {{isSpecial ? '118' : '98'}};">
+    <div class="placeholder" style="background-color: {{backgroundColor}}"></div>
+    <image if="{{!(isVisibility && isSpecial)}}" class="tab-icon" src={{icon}}></image>
+    <image if="{{isVisibility && isSpecial}}" class="tab-icon-special" src={{icon}}></image>
+    <text class="tab-text" style="color: {{titleColor}}">{{title}}</text>
+    <div class="touch-item" onclick="onclickitem"></div>
+  </div>  
+</template>
+
+<style>
+  .container {
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 98;
+  }
+  .tab-icon {
+    width: 45;
+    height: 45;
+  }
+  .tab-icon-special {
+    width: 90; 
+    height: 90;
+  }
+  .tab-text {
+    margin-top: 5;
+    text-align: center;
+    font-size: 20;
+    margin-bottom: 10;
+  }
+  .placeholder {
+    width: 750;
+    height: 98;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-top-width: 2;
+    border-top-color: #e5e5e5;
+  }
+  .touch-item {
+    width: 750;
+    height: 98;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+  }
+</style>
+
+<script>
+  module.exports = {
+    data: {
+      index: 0,
+      title: '',
+      titleColor: '#000000',
+      icon: '',
+      backgroundColor: '#ffffff',
+      pattern: '', //normal special
+      visibility: ''
+    },
+    methods: {
+      onclickitem: function (e) {
+        var vm = this;
+        var params = {
+          index: vm.index
+        };
+        vm.$dispatch('tabItem.onClick', params);
+      }
+    },
+    computed: {
+      isSpecial: function () {
+        return this.pattern === 'special';
+      },
+      isVisibility: function () {
+        return this.visibility === 'visible';
+      }
+    }
+  }
+</script>

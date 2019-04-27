@@ -1,0 +1,193 @@
+{
+    "engine": "0.0.0",
+    "entry": "jipos_user_us_login",
+    "base": "http://192.162.33.108:62306/dist/SC",
+    "version": "0.0.1",
+    "resource": {
+        "common_merchant_aptitude_info": {
+            "src": "common_merchant_aptitude_info.js"
+        },
+        "common_merchant_base_info": {
+            "src": "common_merchant_base_info.js"
+        },
+        "common_merchant_branch_bank": {
+            "src": "common_merchant_branch_bank.js"
+        },
+        "common_merchant_card_list": {
+            "src": "common_merchant_card_list.js"
+        },
+        "common_merchant_credit_card_add": {
+            "src": "common_merchant_credit_card_add.js"
+        },
+        "common_merchant_detail_account-info": {
+            "src": "common_merchant_detail_account-info.js"
+        },
+        "common_merchant_detail_base-info": {
+            "src": "common_merchant_detail_base-info.js"
+        },
+        "common_merchant_detail_business-upgrade": {
+            "src": "common_merchant_detail_business-upgrade.js"
+        },
+        "common_merchant_detail_credit-card": {
+            "src": "common_merchant_detail_credit-card.js"
+        },
+        "common_merchant_detail_detail-rate-info": {
+            "src": "common_merchant_detail_detail-rate-info.js"
+        },
+        "common_merchant_detail": {
+            "src": "common_merchant_detail.js"
+        },
+        "common_merchant_detail_install-manage": {
+            "src": "common_merchant_detail_install-manage.js"
+        },
+        "common_merchant_detail_rate-info": {
+            "src": "common_merchant_detail_rate-info.js"
+        },
+        "common_merchant_mcc": {
+            "src": "common_merchant_mcc.js"
+        },
+        "common_merchant_mcc_detail": {
+            "src": "common_merchant_mcc_detail.js"
+        },
+        "common_merchant_mcc_type": {
+            "src": "common_merchant_mcc_type.js"
+        },
+        "common_merchant": {
+            "src": "common_merchant.js"
+        },
+        "common_merchant_rate_info": {
+            "src": "common_merchant_rate_info.js"
+        },
+        "common_merchant_settlement_info": {
+            "src": "common_merchant_settlement_info.js"
+        },
+        "common_merchant_submit_after": {
+            "src": "common_merchant_submit_after.js"
+        },
+        "common_merchant_submit_before": {
+            "src": "common_merchant_submit_before.js"
+        },
+        "common_merchant_supplement_aptitude_info": {
+            "src": "common_merchant_supplement_aptitude_info.js"
+        },
+        "dtb_app": {
+            "src": "dtb_app.js"
+        },
+        "dtb_common_crm": {
+            "src": "dtb_common_crm.js"
+        },
+        "dtb_common_crmdetail": {
+            "src": "dtb_common_crmdetail.js"
+        },
+        "dtb_common_home": {
+            "src": "dtb_common_home.js"
+        },
+        "dtb_common_single_web": {
+            "src": "dtb_common_single_web.js"
+        },
+        "dtb_common_webview": {
+            "src": "dtb_common_webview.js"
+        },
+        "dtb_mine_message_center": {
+            "src": "dtb_mine_message_center.js"
+        },
+        "dtb_mine_messagedetail": {
+            "src": "dtb_mine_messagedetail.js"
+        },
+        "dtb_mine": {
+            "src": "dtb_mine.js"
+        },
+        "dtb_mine_user_setting": {
+            "src": "dtb_mine_user_setting.js"
+        },
+        "dtb_user_jfhome": {
+            "src": "dtb_user_jfhome.js"
+        },
+        "dtb_user_login": {
+            "src": "dtb_user_login.js"
+        },
+        "dtb_user_reset_pwd": {
+            "src": "dtb_user_reset_pwd.js"
+        },
+        "dtb_user_respect": {
+            "src": "dtb_user_respect.js"
+        },
+        "dtb_user_setting": {
+            "src": "dtb_user_setting.js"
+        },
+        "dtb_user_suggest": {
+            "src": "dtb_user_suggest.js"
+        },
+        "jipos_common_us_home": {
+            "src": "jipos_common_us_home.js"
+        },
+        "jipos_common_us_iframe": {
+            "src": "jipos_common_us_iframe.js"
+        },
+        "jipos_common_us_life": {
+            "src": "jipos_common_us_life.js"
+        },
+        "jipos_user_us_login": {
+            "src": "jipos_user_us_login.js"
+        },
+        "jipos_user_us_setting_password": {
+            "src": "jipos_user_us_setting_password.js"
+        },
+        "login": {
+            "src": "login.js"
+        }
+    },
+    "meta": [
+        {
+            "type": "page",
+            "name": "dtb_common_home",
+            "components": [
+                {
+                    "type": "square",
+                    "data": [
+                        {
+                            "icon": "http://ptstatics.oss-cn-shanghai.aliyuncs.com/dtb/images/tnkt.png",
+                            "title": "替你开通",
+                            "action": [
+                                {
+                                    "push": "openforu_open"
+                                }
+                            ]
+                        },
+                        {
+                            "icon": "http://ptstatics.oss-cn-shanghai.aliyuncs.com/dtb/images/tndb.png",
+                            "action": [
+                                {
+                                    "push": "common_merchant_entry"
+                                }
+                            ],
+                            "title": "商户进件"
+                        },
+                        {
+                            "icon": "http://ptstatics.oss-cn-shanghai.aliyuncs.com/dtb/images/zydj_icon.png",
+                            "title": "自由定价",
+                            "action": [
+                                {
+                                    "push": "price_pricelist"
+                                }
+                            ]
+                        },
+                        {
+                            "icon": "http://ptstatics.oss-cn-shanghai.aliyuncs.com/dtb/images/InviteDoCard.png",
+                            "title": "邀请办卡",
+                            "action": [
+                                {
+                                    "link": "https://finumi.com/html/QR-code.html?jf_phone=${PHONE}&appId=${APPID}"
+                                }
+                            ]
+                        }
+                    ],
+                    "options": {
+                        "each": 2,
+                        "type": "larger"
+                    }
+                }
+            ]
+        }
+    ]
+}

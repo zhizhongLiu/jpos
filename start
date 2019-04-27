@@ -1,0 +1,14 @@
+echo "================== Welcome to Next Step =================="
+
+#!/bin/bash
+# called by native
+THIS_DIR=$(dirname "$0")
+pushd "$THIS_DIR"
+
+npm run clean
+npm run serve &
+# npm run dev:web &
+npm run dev:native
+
+
+popd
